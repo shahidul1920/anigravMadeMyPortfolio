@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 :root {
   --bg-color: #ffffff;
   --text-color: #111111;
@@ -96,5 +98,30 @@ p {
   &:hover {
     transform: scale(1.05);
     opacity: 0.9;
+  }
+}
+
+/* Experience Grid */
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 24px;
+
+  @include mobile {
+    grid-template-columns: 1fr;
+    /* Stack on mobile */
+  }
+}
+
+.experience-item {
+
+  /* Default span handled in JS or here if generic */
+  &.span-2 {
+    grid-column: span 2;
+
+    @include mobile {
+      grid-column: span 1;
+      /* Reset span on mobile */
+    }
   }
 }

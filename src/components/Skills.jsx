@@ -27,7 +27,7 @@ const Skills = () => {
 
     return (
         <section className="section" style={{ overflow: 'hidden', background: '#111', color: '#fff' }}>
-            <div className="container" ref={containerRef}>
+            <div className="container" ref={containerRef} style={{ overflow: 'hidden' }}>
                 <h2 style={{ marginBottom: '60px', textAlign: 'center' }}>Skills & Interests</h2>
                 <div
                     ref={sliderRef}
@@ -36,19 +36,21 @@ const Skills = () => {
                         gap: '20px',
                         cursor: 'grab',
                         width: 'max-content',
-                        padding: '20px 0'
+                        padding: '20px 40px', /* Add horizontal padding to avoid cutting off edges */
+                        marginLeft: 'auto',
+                        marginRight: 'auto'
                     }}
                 >
                     {skills.map((skill, index) => (
                         <div
                             key={index}
                             style={{
-                                padding: '20px 40px',
+                                padding: '15px 30px', /* Slightly smaller padding for better mobile fit */
                                 background: 'rgba(255,255,255,0.1)',
                                 border: '1px solid rgba(255,255,255,0.1)',
                                 color: '#fff',
                                 borderRadius: '100px',
-                                fontSize: '1.5rem',
+                                fontSize: 'clamp(1rem, 2vw, 1.5rem)', /* Responsive font size */
                                 whiteSpace: 'nowrap',
                                 userSelect: 'none',
                                 backdropFilter: 'blur(10px)',

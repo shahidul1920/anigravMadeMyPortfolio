@@ -78,13 +78,12 @@ const Experience = () => {
         <section ref={containerRef} className="section" style={{ background: '#fff' }}>
             <div className="container">
                 <h2 style={{ marginBottom: '60px', textAlign: 'center' }}>Experience</h2>
-                <div className="bento-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '24px' }}>
+                <div className="experience-grid">
                     {experiences.map((exp, index) => (
                         <div
                             key={index}
-                            className="bento-item"
+                            className={`bento-item experience-item ${exp.cols === 2 ? 'span-2' : ''}`}
                             style={{
-                                gridColumn: exp.cols === 2 ? 'span 2' : 'span 1',
                                 background: exp.bg,
                                 padding: '40px',
                                 borderRadius: '24px',
@@ -106,7 +105,7 @@ const Experience = () => {
                             }}
                         >
                             <div>
-                                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'start', marginBottom: '20px' }}>
+                                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'start', marginBottom: '20px', flexWrap: 'wrap', gap: '10px' }}>
                                     <h3 style={{ fontSize: '1.8rem', lineHeight: 1.1 }}>{exp.role}</h3>
                                     <span style={{
                                         fontSize: '0.8rem',
