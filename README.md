@@ -1,17 +1,50 @@
-# React + Vite
+# Shahidul Islam - Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, minimal personal portfolio website designed to showcase my work as a Designer, UI/UX Specialist, and Front-end Developer. Built with performance and aesthetics in mind using React and GSAP.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
+[Link to your live demo if available]
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+- **Interactive Hero Section**: Custom HTML5 Canvas animation with mouse-reactive dots.
+- **Premium UI/UX**: Glassmorphism effects, refined typography (Inter), and smooth transitions.
+- **Bento Grid Layout**: A responsive, grid-based display for professional experience.
+- **Draggable Skills**: Interactive "chip" style slider for technical skills.
+- **Stacked Scrolling**: "Worked With" section features a sticky stacking card effect.
+- **Modern Contact Form**: Minimalist form with floating label interactions.
+- **Responsive Design**: Fully optimized for all device sizes using SCSS and `clamp()` typography.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- **Framework**: [React](https://reactjs.org/) + [Vite](https://vitejs.dev/)
+- **Styling**: [SCSS](https://sass-lang.com/) (Modular architecture with variables & mixins)
+- **Animations**: [GSAP](https://greensock.com/gsap/) (ScrollTrigger, Draggable)
+- **Typography**: Inter (Google Fonts)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# anigravMadeMyPortfolio
+## 📦 Installation & Setup
+
+1.  **Clone the repository**
+    ```bash
+    git clone https://github.com/shahidul1920/anigravMadeMyPortfolio.git
+    cd anigravMadeMyPortfolio
+    ```
+
+2.  **Install dependencies**
+    ```bash
+    npm install
+    ```
+
+3.  **Start the development server**
+    ```bash
+    npm run dev
+    ```
+
+4.  **Build for production**
+    ```bash
+    npm run build
+    ```
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
